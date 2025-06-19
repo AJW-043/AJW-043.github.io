@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>DEM - Maps</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Wiberg</strong> <span>Lexi</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="maps.html">Maps</a></li>
+							<li><a href="computational_physics.html">Computational Physics</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="about.html" class="button fit">About</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Digital Elevation Map</h1>
+									</header>
+									<p>A digital elevation models (DEM) represent terrains and surfaces using the elevation at each point. Digital surface models (DSM) capture all the highest surfaces, including trees and buildings for instance. Digital terrain models (DTM) removes any above ground features such that only the ground is modeled. DEMs are useful in a number of fields, including urban planning and environmental modeling. In the maps below I use it to compare an old map with a current one.</p>
+
+									<h2>DTM</h2>
+									<p>The map below shows a DEM for an area near Den Bosch which had a river running through it, the Meuse.</p> 
+									<span><img src="images/DTM_map.jpg" style="width: 800px; height: auto;" alt=" " /></span>
+									<p>The data for this map were sourced from <a href="https://geotiles.citg.tudelft.nl/" >GeoTiles</a>.</p>
+									
+									<h2>Comparison to old map</h2>
+									<p>In the map below I used a DTM overlayed with a DSM hillshade, which gives the map a 3D appearance. As was found by my professor Dr. Bretta, this highlights the main ground features, but also gives a shadow of the full surface. Next, an old map from 1841 was layerd on top for comaprison. The colors in the DEM were chosen to be color blind safe and because they highlight structures such as dykes, which pop prominently next to the river.</p>
+									<span><img src="images/DEM_old_new.jpg" style="width: 800px; height: auto;" alt=" " /></span>
+									<p>The old map was found on <a href="https://www.oldmapsonline.org/en/Lithoijen?year=1841&gid=e6ba89d6-6606-43c3-ab2c-1481d15b9625#position=13.6115/51.82274/5.45922&year=1850" >old maps online</a>.</p>
+									<p>In the map above, notice how the course of the river changed since the old map was drawn. The old path is still clearly visible in the DEM, even though it is not as clear in satelite pictures. In places where the river has not changed course, the dykes still seem the exact same. Finally, there is a strangely high point of elevation in the top right corner. Though it is unclear what it is, based on google maps there certainly is elevation there but the historic map shows no evidence of it.</p>
+
+									<h2>REM</h2>
+									<p>Generally, as stated by Dan Coe, relative elevation models (REM) are used “to better visualize river features that are difficult to discern using an aerial photo or standard DEM.” Specifically it should help in discerning where river channels were in the past, which would be very useful for the chosen location since the river did trace a different path in the past. As such the idea was to make this more visible and clear using an REM. However, since the water level did not change in the map, no distinguishable change was noticed after making the REM. However, the different color gradient choosen hilights the changes in river path well.</p>
+									<span><img src="images/REM_small.jpg" style="width: auto; height: 100;" alt=" " /></span>
+									<span><img src="images/RGB_bosch_small.jpg" style="width: auto; height: 100;" alt=" " /></span>
+
+									<p></p>
+									<h2>Summary of new skills gained</h2>
+									<p>In making these maps I learned a number of new skills, from importing and merging the data, to adjusting the map layers and settings to make the maps as clear as possible. Further, I learned how to georeference an old map to match the coordinates with a new one and allow for easy comparison. Finally I learned how to generate an REM by interpolating the data.</p>
+									
+								</div>
+								
+								<div style="text-align: center; margin-top: 1em;">
+								<a href="index.html" class="button primary fit">Back to home</a>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->	
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/alexandria-wiberg-7401a6286" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:lexi.wiberg@outlook.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; LEXI WIBERG</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
