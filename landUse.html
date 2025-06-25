@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Vector Spacial Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" href="images/favicon.png">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Wiberg</strong> <span>Lexi</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="maps.html">Maps</a></li>
+							<li><a href="computational_physics.html">Computational Physics</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="about.html" class="button fit">About</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Land Use Classification</h1>
+									</header>
+									
+									<p>In this assignment we used data fromt he satellite sentinel-2. The satellite revisits an area every 5 days (temporal resolution), and each pixel represents 20m (spatial resolution). The information collected is the wavelengths of the electromagnetic waves and its intensity. This information can then be applied in many ways. For instance, one could look at vegetation health. Healthy plants reflect a much larger amount of near infrared light compared to visible infrared. On the other hand unhealthy vegetation emits more visible infrared than healthy plants. This gives a method to classify healthy and unhealthy vegetation. Many types of land cover have unique spectral signitures comprised of different ratios elecrtomagentic waves. From this, we can then infer how the land is used.
+									<p>To classify the data, machine learning techniques are often used, which involves a computer program sorting the land cover based ont he spectral signitures. Supervised and unsupervised classification schemes were tested, using both pixel and object oriented methods. For the goal of classifying land use as either forested, cultivated, water or urban, the unsupervised pixel-oriented classification did best. The main categories were distinct, and none of the categories were too overgeneralized. Note however that with more training data the supervised classification could do better.</p>
+									
+									<h2>Land use classification</h2>
+									<iframe src="https://uni-utrecht.maps.arcgis.com/apps/instant/basic/index.html?appid=d18b0f32527248dba2ff2e94b912eca5" width="800" height="600" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe> 
+									<img src="images/legend_landClass.png" style="width: 100px; height: auto;" alt=" " />
+									<p>Here an unsupervised pixel based classification scheme was used. Dense forest is identified consistently, as are urban spaces. However, urban spaces and water were combined into one group. Cultivated land was divided into two classes, and the distinction between cultivated land less dense forest is not so clear.</p>
+									
+									<h2>Vegetation Health</h2>
+									<iframe src="https://uni-utrecht.maps.arcgis.com/apps/instant/basic/index.html?appid=55d675af9fdc495eb4e65a022ccb2bc3" width="800" height="600" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
+									<p>In the map above healthy vegetation is shown in darker green colors. This is done using the data from sentinel-2 as described in the introduction.</p>
+									
+									<h2>Making the maps</h2>
+									<p>The data, supported by the European Space Agency (ESA), was accessed through google earth engine (GEE). A region of interest was defined, and the band combinations changed. To see healthy vegetation bands B8, B4 and B3 were used. For classifying land the bands for agriculture (B11, B8 and B2) were used. The image was then exported and analyzed in arcGIS pro using the different classification systems described earlier.</p>
+								</div>
+								
+								<div style="text-align: center; margin-top: 1em;">
+								<a href="index.html" class="button primary fit">Back to home</a>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->	
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/alexandria-wiberg-7401a6286" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:lexi.wiberg@outlook.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; LEXI WIBERG</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

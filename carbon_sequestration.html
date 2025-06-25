@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Wiberg Lexi</title>
+		<title>Choropleth - Maps</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,7 +18,7 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
+					<header id="header">
 						<a href="index.html" class="logo"><strong>Wiberg</strong> <span>Lexi</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
@@ -38,88 +38,20 @@
 						</ul>
 					</nav>
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Computational Physics</h1>
-							</header>
-							<div class="content">
-								<p>I'm working on it ...</p>
-							</div>
-						</div>
-					</section>
-
 				<!-- Main -->
-					<div id="main">
+					<div id="main" class="alt">
 
-						<!-- One --><!--
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="pic01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="choropleth map.html" class="link">Modeling Planetary Orbets</a></h3>
-										<p>Because they're cool</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="DEM.html" class="link">Some other stuff</a></h3>
-										<p>Even coler</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">etc</a></h3>
-										<p>You know the drill</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">etc</a></h3>
-										<p>etc</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">etc</a></h3>
-										<p>etc</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">etc</a></h3>
-										<p>etc</p>
-									</header>
-								</article>
-							</section>
-
-						<!-- Two --><!--
-							<section id="two">
+						<!-- One -->
+							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Cool right?</h2>
+										<h1>Carbon Sequestration</h1>
 									</header>
-									<p>Hope you liked the page :)</p>
-								</div>
-								
+									<p>The carbon sequestration potential index (CSPI) is an index to express carbon uptake efficiency. The index is calculated using the gross primary production (GPP), which is the rate at which carbon in the atmosphere is fixed by photosynthesis. Aboveground carbon density (ACD) is also used, which is the carbon stored in living plant tissues on the earth surface. Combining these concepts can help determine which areas should be protected and which need reforestation in order to absorb more atmospheric carbon. It can also help with SDG 15, life on land.</p>
+									<iframe src="https://land-use-classification-463809.projects.earthengine.app/view/srilankasouthcarbonsequestration" style="height:700px;width:1200px; border:none" title="description"></iframe>
+									<p>Based on the GPP map above, the darker red spaces should be conserved, whereas the lighter ones could benefit from increased vegetation in terms of carbon absorption.</p>
+									<h1>Making the map</h1>
+									<p>To start, a shapefile of the region of interest and GeoTIFF file from the <a href="https://data.ceda.ac.uk/neodc/esacci/biomass/data/agb/maps/v4.0/geotiff/2020">ESA biomass dataset for 2020</a> were imported to google earth engine (GEE). A preprogrammed GEE code was used to process the data. I then used a GEE <a href="https://developers.google.com/earth-engine/tutorials/community/creating-web-apps">tutorial</a> by <a href="https://tc25.github.io/">Chackraborty</a> to format the web app.</p>
 								<div style="text-align: center; margin-top: 1em;">
 								<a href="index.html" class="button primary fit">Back to home</a>
 								</div>
@@ -127,6 +59,7 @@
 
 					</div>
 
+				<!-- Contact -->	
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
