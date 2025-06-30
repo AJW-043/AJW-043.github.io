@@ -6,11 +6,12 @@
 -->
 <html>
 	<head>
-		<title>Choropleth - Maps</title>
+		<title>Carbon Sequestration</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" href="images/favicon.png">
 	</head>
 	<body class="is-preload">
 
@@ -29,12 +30,11 @@
 					<nav id="menu">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
 							<li><a href="maps.html">Maps</a></li>
 							<li><a href="computational_physics.html">Computational Physics</a></li>
 						</ul>
 						<ul class="actions stacked">
-							<li><a href="contact.html" class="button fit">Contact</a></li>
+							<li><a href="about.html" class="button fit">About</a></li>
 						</ul>
 					</nav>
 
@@ -47,15 +47,16 @@
 									<header class="major">
 										<h1>Carbon Sequestration</h1>
 									</header>
-									<p>The carbon sequestration potential index (CSPI) is an index to express carbon uptake efficiency. The index is calculated using the gross primary production (GPP), which is the rate at which carbon in the atmosphere is fixed by photosynthesis. Aboveground carbon density (ACD) is also used, which is the carbon stored in living plant tissues on the earth surface. Combining these concepts can help determine which areas should be protected and which need reforestation in order to absorb more atmospheric carbon. It can also help with SDG 15, life on land.</p>
+									<p>The carbon sequestration potential index (CSPI) is an index to express carbon uptake efficiency. The index is calculated using the gross primary production (GPP), which is the rate at which carbon in the atmosphere is fixed by photosynthesis. Aboveground carbon density (ACD) is also used, which is the carbon stored in living plant tissues on the earth surface. Combining these concepts can help determine which areas should be protected and which need reforestation in order to absorb more atmospheric carbon. It can also help with monitoring SDG 15, life on land.</p>
 									<iframe src="https://land-use-classification-463809.projects.earthengine.app/view/srilankasouthcarbonsequestration" style="height:700px;width:1200px; border:none" title="description"></iframe>
 									<p>Based on the GPP map above, the darker red spaces should be conserved, whereas the lighter ones could benefit from increased vegetation in terms of carbon absorption.</p>
 									<h1>Making the map</h1>
-									<p>To start, a shapefile of the region of interest and GeoTIFF file from the <a href="https://data.ceda.ac.uk/neodc/esacci/biomass/data/agb/maps/v4.0/geotiff/2020">ESA biomass dataset for 2020</a> were imported to google earth engine (GEE). A preprogrammed GEE code was used to process the data. I then used a GEE <a href="https://developers.google.com/earth-engine/tutorials/community/creating-web-apps">tutorial</a> by <a href="https://tc25.github.io/">Chackraborty</a> to format the web app.</p>
-								<div style="text-align: center; margin-top: 1em;">
-								<a href="index.html" class="button primary fit">Back to home</a>
-								</div>
+									<p>To start, a shapefile of the region of interest was made and a GeoTIFF file was downloaded from the <a href="https://data.ceda.ac.uk/neodc/esacci/biomass/data/agb/maps/v4.0/geotiff/2020">ESA biomass dataset for 2020</a>. These were imported to google earth engine (GEE). A preprogrammed GEE code was used to process the data. I then used a GEE <a href="https://developers.google.com/earth-engine/tutorials/community/creating-web-apps">tutorial</a> by <a href="https://tc25.github.io/">Chackraborty</a> to format the web app.</p>
 							</section>
+						
+						<div style="text-align: center; margin-top: 1em;">
+							<a href="maps.html" class="button primary fit">Back to maps</a>
+						</div>
 
 					</div>
 
@@ -66,7 +67,7 @@
 							<ul class="icons">
 								<li><a href="https://www.linkedin.com/in/alexandria-wiberg-7401a6286" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="mailto:lexi.wiberg@outlook.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://github.com/AJW-043" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 							</ul>
 							<ul class="copyright">
 								<li>&copy; LEXI WIBERG</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>

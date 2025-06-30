@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>DEM - Maps</title>
+		<title>DEM</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -47,10 +47,10 @@
 									<header class="major">
 										<h1>Digital Elevation Map</h1>
 									</header>
-									<p>A digital elevation models (DEM) represent terrains and surfaces using the elevation at each point. Digital surface models (DSM) capture all the highest surfaces, including trees and buildings for instance. Digital terrain models (DTM) removes any above ground features such that only the ground is modeled. DEMs are useful in a number of fields, including urban planning and environmental modeling. In the maps below I use it to compare an old map with a current one.</p>
+									<p>Digital elevation models (DEM) represent terrains and surfaces using the elevation at each point. Digital surface models (DSM) capture all the highest surfaces, including trees and buildings for instance. Digital terrain models (DTM) remove any above ground features such that only the ground is modeled. DEMs are useful in a number of fields, including urban planning and environmental modeling. In the maps below I use it to compare an old map with a current one.</p>
 
 									<h2>DTM</h2>
-									<p>The map below shows a DEM for an area near Den Bosch which had a river running through it, the Meuse.</p> 
+									<p>The map below shows a DEM for a river near Den Bosch, part of the Meuse.</p> 
 									<span><img src="images/DTM_map.jpg" style="width: 800px; height: auto;" alt=" " /></span>
 									<p>The data for this map were sourced from <a href="https://geotiles.citg.tudelft.nl/" >GeoTiles</a>.</p>
 									
@@ -61,13 +61,11 @@
 									<p>In the map above, notice how the course of the river changed since the old map was drawn. The old path is still clearly visible in the DEM, even though it is not as clear in satelite pictures. In places where the river has not changed course, the dykes still seem the exact same. Finally, there is a strangely high point of elevation in the top right corner. Though it is unclear what it is, based on google maps there certainly is elevation there but the historic map shows no evidence of it.</p>
 
 									<h2>REM</h2>
-									<p>Generally, as stated by <a href="https://dancoecarto.com/creating-rems-in-qgis-the-cross-section-method">Dan Coe</a>, relative elevation models (REM) are used “to better visualize river features that are difficult to discern using an aerial photo or standard DEM.” Specifically it should help in discerning where river channels were in the past, which would be very useful for the chosen location since the river did trace a different path in the past. As such the idea was to make this more visible and clear using an REM. However, since the water level did not change in the map, no distinguishable change was noticed after making the REM. However, the different color gradient choosen hilights the changes in river path well.</p>
-									<span><img src="images/REM_small.jpg" style="width: auto; height: 100;" alt=" " /></span>
+									<p>Generally, as stated by <a href="https://dancoecarto.com/creating-rems-in-qgis-the-cross-section-method">Dan Coe</a>, relative elevation models (REM) are used “to better visualize river features that are difficult to discern using an aerial photo or standard DEM.” Specifically it should help in discerning where river channels were in the past. As such the idea was to make the changes in the river’s path more visible and clear using an REM. However, since the water level did not change in the map, no distinguishable change was noticed after making the REM. However, the different color gradient chosen highlights the changes in river path well.</p>									<span><img src="images/REM_small.jpg" style="width: auto; height: 100;" alt=" " /></span>
 									<span><img src="images/RGB_bosch_small.jpg" style="width: auto; height: 100;" alt=" " /></span>
 									
 									<p></p>
-									<p>Since I did not find many changes, I thought I would try the same method with a section of the mississippi river to make sure I was doing it right. I chose the mississippi river since Dan Coe analyzed it before and found interesting results and hidden layers, as written in a <a href="https://www.nationalgeographic.com/science/article/mississippi-rivers-hidden-history-uncovered-by-lidar">National Geographic magazine</a>. Below, on the left is the DEM, on the right is the REM. Notice how in the DEM (left) the color of the river fades as the elevation decreases in the top right corner. On the other hand, in the REM the color stays more constant and the detail is preserved much better.</p>
-									<span><img src="images/mississippi_DEM.png" style="width: 25%; height: auto;" alt=" " /></span>
+									<p>Since I did not find any changes, I thought I would try the same method with a section of the Mississippi river to make sure I was doing it right. I chose the Mississippi river since Dan Coe analyzed it before and found interesting results and hidden layers, as written in a <a href="https://www.nationalgeographic.com/science/article/mississippi-rivers-hidden-history-uncovered-by-lidar">National Geographic magazine</a>. Below, on the left is the DEM, on the right is the REM. Notice how in the DEM (left) the color of the river fades as the elevation decreases in the top right corner. On the other hand, in the REM the color stays more constant and the detail is preserved much better.</p>									<span><img src="images/mississippi_DEM.png" style="width: 25%; height: auto;" alt=" " /></span>
 									<span><img src="images/mississippi_REM_orig.jpg" style="width: 24.7%; height: auto;" alt=" " /></span>
 
 									<p></p>
@@ -77,7 +75,7 @@
 								</div>
 								
 								<div style="text-align: center; margin-top: 1em;">
-								<a href="index.html" class="button primary fit">Back to home</a>
+									<a href="maps.html" class="button primary fit">Back to maps</a>
 								</div>
 							</section>
 
@@ -90,7 +88,7 @@
 							<ul class="icons">
 								<li><a href="https://www.linkedin.com/in/alexandria-wiberg-7401a6286" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="mailto:lexi.wiberg@outlook.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://github.com/AJW-043" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 							</ul>
 							<ul class="copyright">
 								<li>&copy; LEXI WIBERG</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
